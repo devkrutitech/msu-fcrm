@@ -154,18 +154,24 @@ h6 {
   color: #111111;
 }
 
+#header .logo1 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header .logo1 a {
+  color: #111111;
+}
 @media (max-width: 500px) {
-  #header .logo {
+  #header .logo1 {
     visibility: hidden;
   }
 }
-
 #header .logo a span {
   color: #946833;
-}
-
-#header .logo img {
-  max-height: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -193,6 +199,9 @@ h6 {
   .get-started-btn {
     margin: 0 15px 0 0;
     padding: 6px 18px;
+  }
+  .memberMargin{
+    margin-bottom: 20px;
   }
 }
 
@@ -925,8 +934,8 @@ section {
   font-size: 26px;
 }
 
-.tabs .tab-pane ul {
-  list-style: none;
+.tabs .tab-pane ul li {
+  list-style: disc;
   padding: 0;
 }
 
@@ -1114,7 +1123,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# 
+
 --------------------------------------------------------------*/
 .testimonials {
   margin-top: 60px;
@@ -1253,7 +1263,7 @@ section {
 .testimonials1 .testimonial-item p {
   font-size: 14px;
   margin: 0 auto 15px auto;
-  font-family: 'Satisfy', cursive;
+/*   font-family:  cursive; */
 }
 
 .testimonials1 .swiper-pagination {
@@ -1464,6 +1474,7 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  
 }
 
 .team .member .social {
@@ -2282,6 +2293,12 @@ section {
   background: #111111;
 }
 
+#footer ul {
+  list-style: none;
+  text-indent: 0;
+  margin-left: -20px;
+}
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #1b1b1b;
@@ -2408,5 +2425,20 @@ section {
   }
   h4 {
     font-size: 16px;
+  }
+}
+
+.visibleClass {
+  display: block;
+}
+.nonVisibleClass {
+  display: none;
+}
+@media (max-width: 600px) {
+  .visibleClass {
+    display: none;
+  }
+  .nonVisibleClass {
+    display: block;
   }
 }
